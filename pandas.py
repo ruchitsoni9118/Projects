@@ -86,3 +86,34 @@ import pandas as pd
 # del df['List4']
 # df.pop('List3')
 # print(df)
+
+s = pd.Series([10,15,20,25,30])
+df = pd.DataFrame(s)
+df.columns = ['List1']
+df['List2'] = ([15,20,25,30,35])
+df['List3'] = ([20,25,30,35,40])
+print(df)
+df1 = df.drop('List2',axis=1)
+print(df1)
+df2 = df.drop('List3',axis=0)
+print(df2)
+
+'Boolean Indexing in Data frames'
+# dic = {'Name':['Sachin','Virat','Hardik'],
+#             'Age' : [50,34,29]}
+            
+# df = pd.DataFrame(dic, index =[True,False,True])
+# print(df)
+# print(df.loc[False])
+
+'Concatenating two dataframes'
+dict1 = {'id': [10,18,7], 'Name': ['Sachin','Kohli','Dhoni']}
+# df1 = pd.DataFrame(dict1)
+# print(df1)
+
+# dict2 = {'id': [45,27], 'Name': ['Rohit','Shikhar']}
+# df2 = pd.DataFrame(dict2)
+# print(df2)
+
+# df3 =pd.concat([df1,df2])
+# print(df3)
