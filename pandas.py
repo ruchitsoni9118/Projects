@@ -75,3 +75,14 @@ import pandas as pd
 # df.columns = ['List1']
 # df['List2'] = ([10,15,20,25,30])
 # print(df)
+
+'Add, rename or delete a column'
+# s = pd.Series([10,15,20,25,30])
+# df = pd.DataFrame(s)
+# df.columns = ['List1']
+# df['List2'] = ([15,20,25,30,35])
+# df['List3'] = ([20,25,30,35,40])
+# df['List4'] = df['List1'] + df['List2'] + df['List3']
+# del df['List4']
+# df.pop('List3')
+# print(df)
